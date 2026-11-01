@@ -371,7 +371,17 @@ nav a:hover {
     margin: 40px auto 0;
     flex-wrap: nowrap;
 }
-
+.team-card {
+    flex: 1;
+    width: 50%;
+    max-width: 350px;
+    min-width: 0;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
 .team-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
