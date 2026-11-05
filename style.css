@@ -159,118 +159,51 @@ nav a:hover::after { width: 100%; }
 
 footer { text-align: center; padding: 34px 20px; color: rgba(255,255,255,.8); background: #21164e; }
 
-/* =====================================
-   VLN INSURANCE - MOBILE RESPONSIVE FIX
-===================================== */
 
-* {
-    box-sizing: border-box;
-}
+/* MOBILE FIX FOR VLN INSURANCE SERVICE CARDS */
 
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
+@media screen and (max-width: 768px) {
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 768px) {
-
-    /* General section spacing */
-    section {
-        padding: 45px 18px !important;
-    }
-
-    /* Prevent blocks from overflowing */
-    .container,
-    .contact-container,
-    [class*="grid"] {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-    }
-
-    /* Display grid layouts vertically */
-    [class*="grid"] {
+    .services-container {
+        display: grid !important;
         grid-template-columns: minmax(0, 1fr) !important;
+        gap: 22px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 25px auto !important;
     }
 
-    /* Cards */
-    .service-card,
-    .team-card,
-    .about-card,
-    .feature-card {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        margin-left: auto;
-        margin-right: auto;
+    .service-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        padding: 28px 24px !important;
+        box-sizing: border-box !important;
+        border-radius: 22px !important;
     }
 
-    /* Contact section */
-    .contact-container {
-        grid-template-columns: minmax(0, 1fr) !important;
-        gap: 20px;
+    .service-card h3 {
+        font-size: 23px !important;
+        line-height: 1.4 !important;
+        overflow-wrap: break-word;
     }
 
-    .contact-info,
-    .contact-form {
-        width: 100%;
-        padding: 24px;
+    .service-card p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+        overflow-wrap: break-word;
     }
 
-    /* Navigation */
-    header {
-        flex-wrap: wrap;
-        gap: 12px;
+    .service-card a {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 17px !important;
     }
 
-    nav {
-        max-width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+    .service-icon {
+        font-size: 42px !important;
     }
 
-    /* Text and buttons */
-    h1 {
-        font-size: clamp(2rem, 8vw, 2.7rem) !important;
-        line-height: 1.2;
-    }
-
-    h2 {
-        font-size: clamp(1.5rem, 6vw, 2rem) !important;
-    }
-
-    p {
-        overflow-wrap: anywhere;
-    }
-
-    button,
-    .btn,
-    a {
-        max-width: 100%;
-    }
 }
 
-@media (max-width: 480px) {
-
-    section {
-        padding: 35px 14px !important;
-    }
-
-    .contact-info,
-    .contact-form {
-        padding: 20px;
-        border-radius: 18px;
-    }
-
-    nav {
-        gap: 9px;
-    }
-}
 
